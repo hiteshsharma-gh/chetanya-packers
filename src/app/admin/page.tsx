@@ -1,18 +1,18 @@
 import { getServerSession } from 'next-auth'
 import React from 'react'
-import { authOptions } from '../api/auth/[...nextauth]/route'
 import { redirect } from 'next/navigation'
 
 async function admin() {
-  const session = await getServerSession(authOptions)
+  const session = await getServerSession()
+  console.log(session)
 
-  if (session && session.user.id) {
-    return (
-      <div>admin</div>
-    )
+  if (!session || !session.user) {
+    redirect('/api/auth/signin')
   }
 
-  redirect('/api/auth/signin')
+  return (
+    <div>admin</div>
+  )
 }
 
 export default admin
