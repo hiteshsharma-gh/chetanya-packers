@@ -34,6 +34,15 @@ export async function addCustomer(name: string, contact: string) {
 
     return { message: "customer added successfully" }
   } catch (error) {
-    return { error }
+    console.error(error)
+  }
+}
+
+export async function getAllCustomer() {
+  try {
+    const customer = await prisma.customer.findMany()
+    return customer
+  } catch (error) {
+    console.error(error)
   }
 }

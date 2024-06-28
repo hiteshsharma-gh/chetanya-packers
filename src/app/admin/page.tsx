@@ -1,5 +1,4 @@
 import { getServerSession } from 'next-auth'
-import React from 'react'
 import { redirect } from 'next/navigation'
 
 async function admin() {
@@ -7,12 +6,10 @@ async function admin() {
   console.log(session)
 
   if (!session || !session.user) {
-    redirect('/api/auth/signin')
+    return redirect('/api/auth/signin')
   }
 
-  return (
-    <div>admin</div>
-  )
+  return
 }
 
 export default admin
