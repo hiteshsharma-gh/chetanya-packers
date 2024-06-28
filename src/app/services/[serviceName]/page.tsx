@@ -42,8 +42,8 @@ function services({ params }: { params: { serviceName: string } }) {
   }
   return (
     <section className='mt-8 flex flex-col justify-center items-center'>
-      <div className='text-4xl text-center font-semibold text-[#ED3237]'>{params.serviceName.toUpperCase() + " SERVICES"}</div >
-      <div className="lg:max-w-[50vw] mt-8 w-full mr-2 bg-[#ED3237] rounded-xl p-5 m-3">
+      <div className='text-4xl text-center font-semibold text-cyan-500'>{params.serviceName.toUpperCase() + " SERVICES"}</div >
+      <div className="lg:max-w-[50vw] mt-8 w-full mr-2 bg-cyan-500 rounded-xl p-5 m-3">
         <ContactUsForm />
       </div>
     </section>

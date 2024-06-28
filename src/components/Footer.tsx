@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 function Footer() {
   return (
-    <footer className='static bg-[#FFCC03] w-full text-black text-sm py-1 mt-16'>
+    <footer className='static bg-amber-300 w-full text-black text-sm py-1 mt-16'>
       <div className='flex justify-between px-10'>
         <div className='flex items-center gap-5'>
           <Link href='/'>

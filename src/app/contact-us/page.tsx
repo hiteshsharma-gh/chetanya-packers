@@ -4,8 +4,8 @@ import React from 'react'
 function contactUs() {
   return (
     <section className='mt-8 flex flex-col justify-center items-center'>
-      <h2 className='text-4xl text-center font-semibold text-[#ED3237]'>Contact Us</h2 >
-      <div className='mt-5 flex flex-col p-5 rounded-lg items-center text-black text-md font-medium bg-[#FFCC03]'>
+      <h2 className='text-4xl text-center font-semibold text-cyan-500'>Contact Us</h2 >
+      <div className='mt-5 flex flex-col p-5 rounded-lg items-center text-black text-md font-medium bg-amber-300'>
         <div className='flex gap-5 self-start'>
           <p>Mobile No.: </p>
           <Link href='tel:9309147622'>

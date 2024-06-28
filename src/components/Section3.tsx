@@ -3,7 +3,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 export function Section3() {
   return (
     <section>
-      <h2 className="text-4xl font-semibold text-center text-[#ED3237] mt-24">Why Chetanya International Packers and Movers ?</h2>
+      <h2 className="text-4xl font-semibold text-center text-cyan-500 mt-24">Why Chetanya International Packers and Movers ?</h2>
       <div className="h-[35rem] rounded-md flex flex-col antialiased bg-white items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards
           items={testimonials}

@@ -14,7 +14,7 @@ import others from "@/public/others.png"
 export function Section2() {
   return (
     <div>
-      <h2 className="text-4xl text-[#ED3237] text-center font-semibold m-10 mt-20">Services offered by Chetanya International Packers and Movers</h2>
+      <h2 className="text-4xl text-cyan-500 text-center font-semibold m-10 mt-20">Services offered by Chetanya International Packers and Movers</h2>
       <div className="flex flex-wrap justify-center items-center px-3 gap-x-9 w-full z-0">
         <Link href='/services/domestic'>
           <CardContainer className="inter-var w-96 py-2">

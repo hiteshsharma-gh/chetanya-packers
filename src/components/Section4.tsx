@@ -10,7 +10,7 @@ import packing from "@/public/packing.png"
 export function Section4() {
   return (
     <section className="flex flex-col">
-      <h2 className="text-4xl text-center text-[#ED3237] mb-20">Our Process</h2>
+      <h2 className="text-4xl text-center text-cyan-500 mb-20">Our Process</h2>
       <div className="flex justify-center lg:flex-nowrap flex-wrap items-center gap-7 h-auto">
         <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 w-72 lg:h-[55vh] h-auto bg-white dark:bg-zinc-900">
           <Image

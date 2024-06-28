@@ -15,6 +15,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "./ui/textarea"
+import { addCustomer } from "@/actions/customer"
 
 const formSchema = z.object({
   Name: z.string().min(2, { message: "** Name must be at least 2 characters. **" }),
@@ -35,9 +36,9 @@ export function ContactUsForm() {
     },
   })
 
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values)
-
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    const response = await addCustomer(values.Name, values.Phone.toString())
+    console.log(response)
   }
 
   return (
@@ -86,7 +87,7 @@ export function ContactUsForm() {
           )}
         />
         <div className="flex justify-center items-center">
-          <Button type="submit" className="bg-[#FFCC03] text-white text-md mt-1">Submit</Button>
+          <Button type="submit" className="bg-amber-300 text-white text-md mt-1">Submit</Button>
         </div>
       </form>
     </Form>

@@ -59,19 +59,19 @@ const components: { title: string; href: string; }[] = [
 function Navbar() {
   return (
     <nav className='fixed lg:static flex flex-col w-full z-50'>
-      <div className='flex justify-center items-center text-xs py-1.5 px-3 gap-3 font-medium bg-[#FFCC03]'>
+      <div className='flex justify-center items-center text-xs py-1.5 px-3 gap-3 font-medium bg-amber-300'>
         <Link href='for-shipping' className='flex justify-center items-center gap-2'>
-          <FaRegQuestionCircle className='text-[#ED3237]' />
+          <FaRegQuestionCircle className='text-cyan-500' />
           Enquiry
         </Link>
         <span>|</span>
         <Link href='/track' className='flex justify-center items-center gap-2'>
-          <IoLocationSharp className='text-[#ED3237]' />
+          <IoLocationSharp className='text-cyan-500' />
           Tracking
         </Link>
         <span>|</span>
         <Link href='/claims' className='flex justify-center items-center gap-2'>
-          <FaBook className='text-[#ED3237]' />
+          <FaBook className='text-cyan-500' />
           Claims
         </Link>
       </div>
@@ -79,20 +79,20 @@ function Navbar() {
         <Link href='/'>
           <Image src={logo} alt='logo' className='w-36 h-36 rounded-full' priority={true} />
         </Link>
-        <h1 className='text-4xl font-bold text-[#ED3237] hidden lg:flex'>Chetanya International Packers & Movers</h1>
-        <div className='bg-[#ED3237] rounded-lg'>
+        <h1 className='text-4xl font-bold text-cyan-500 hidden lg:flex'>Chetanya International Packers & Movers</h1>
+        <div className='bg-cyan-500 rounded-lg'>
           <Link href={'tel:+919309147622'} target='_blank' className='flex gap-3 px-3 py-2 justify-center items-center'>
-            <FaPhoneAlt className='text-[#FFCC03]' />
+            <FaPhoneAlt className='text-amber-300' />
             <p className='text-white font-medium'>9309147622</p>
           </Link>
         </div>
       </div>
-      <div className='bg-[#ED3237] px-3'>
+      <div className='bg-cyan-500 px-3'>
         <div className='flex lg:hidden justify-end'>
           <div className='flex justify-center items-center text-white mr-3 w-6 h-12'>
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="outline" className='h-5/6 bg-[#ED3237] text-white'>
+                <Button variant="outline" className='h-5/6 bg-cyan-500 text-white'>
                   <SlMenu />
                 </Button>
               </DropdownMenuTrigger>
@@ -164,6 +164,11 @@ function Navbar() {
                       <span>Contact Us</span>
                     </DropdownMenuItem>
                   </Link>
+                  <Link href='/admin'>
+                    <DropdownMenuItem>
+                      <span>Admin</span>
+                    </DropdownMenuItem>
+                  </Link>
                 </DropdownMenuGroup>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -173,7 +178,7 @@ function Navbar() {
           <Link href='/'>Home</Link>
           <Link href='/about-us'>About Us</Link>
           <NavigationMenu>
-            <NavigationMenuList className='text-white bg-[#ED3237]'>
+            <NavigationMenuList className='text-white bg-cyan-500'>
               <NavigationMenuItem>
                 <NavigationMenuTrigger className='text-md font-medium'>Services</NavigationMenuTrigger>
                 <NavigationMenuContent>
@@ -194,6 +199,7 @@ function Navbar() {
           <Link href='/track'>Track Order</Link>
           <Link href='/locations'>Locations</Link>
           <Link href='/contact-us'>Contact Us</Link>
+          <Link href='/admin'>Admin</Link>
         </div>
       </div>
     </nav >
