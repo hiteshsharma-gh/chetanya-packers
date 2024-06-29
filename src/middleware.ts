@@ -5,9 +5,12 @@ import type { NextRequest } from 'next/server'
 export async function middleware(request: NextRequest) {
   const admin = ['admin@chetanyapackers.com']
   const token = await getToken({ req: request, secret: process.env.NEXTAUTH_SECRET })
+  console.log(token)
+  console.log(token?.email)
 
   if (token) {
     const email = token.email
+    console.log(email)
 
     if (email) {
       if (admin.includes(email)) {
