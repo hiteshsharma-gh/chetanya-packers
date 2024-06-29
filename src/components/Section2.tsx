@@ -14,7 +14,7 @@ import others from "@/public/others.png"
 export function Section2() {
   return (
     <div>
-      <h2 className="text-4xl text-cyan-500 text-center font-semibold m-10 mt-20">Services offered by Chetanya International Packers and Movers</h2>
+      <h2 className="text-4xl text-cyan-500 text-center font-semibold m-10 mt-20">Services offered by Chaitanya International Packers and Movers</h2>
       <div className="flex flex-wrap justify-center items-center px-3 gap-x-9 w-full z-0">
         <Link href='/services/domestic'>
           <CardContainer className="inter-var w-96 py-2">
@@ -58,7 +58,7 @@ export function Section2() {
                 translateZ="60"
                 className="text-neutral-500 text-md max-w-sm mt-2"
               >
-                Moving an office can be a costly and time-consuming procedure. Chetanya International Packers and Movers makes it an easy and comfortable journey
+                Moving an office can be a costly and time-consuming procedure. Chaitanya International Packers and Movers makes it an easy and comfortable journey
               </CardItem>
               <CardItem translateZ="100" className="w-full mt-4">
                 <Image
@@ -86,7 +86,7 @@ export function Section2() {
                 translateZ="60"
                 className="text-neutral-500 text-md max-w-sm mt-2"
               >
-                Chetanya International Packers and Movers seamlessly manages your business&apos;s global transition with expert packing, secure transport, and dedicated support every step of the way
+                Chaitanya International Packers and Movers seamlessly manages your business&apos;s global transition with expert packing, secure transport, and dedicated support every step of the way
               </CardItem>
               <CardItem translateZ="100" className="w-full mt-4">
                 <Image

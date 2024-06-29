@@ -11,7 +11,7 @@ function Footer() {
           <Link href='/'>
             <Image src={logo} className='w-20 h-20' alt='logo' />
           </Link>
-          <p className='text-center'>Copyright © 2024 Chetanya Internationl Packers and Movers. All rights reserved.</p>
+          <p className='text-center'>Copyright © 2024 Chaitanya Internationl Packers and Movers. All rights reserved.</p>
         </div>
         <div className='flex justify-center items-center gap-5'>
           <Link href='https://www.twitter.com'>

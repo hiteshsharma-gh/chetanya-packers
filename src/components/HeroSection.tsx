@@ -4,7 +4,7 @@ import { TypewriterEffectSmooth } from "@/components/ui/typewritter-effect";
 
 const words = [
   {
-    text: "Chetanya",
+    text: "Chaitanya",
   },
   {
     text: "International",

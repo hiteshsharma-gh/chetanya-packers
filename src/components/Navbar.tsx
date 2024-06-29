@@ -79,7 +79,7 @@ function Navbar() {
         <Link href='/'>
           <Image src={logo} alt='logo' className='w-36 h-36 rounded-full' priority={true} />
         </Link>
-        <h1 className='text-4xl font-bold text-cyan-500 hidden lg:flex'>Chetanya International Packers & Movers</h1>
+        <h1 className='text-4xl font-bold text-cyan-500 hidden lg:flex'>Chaitanya International Packers & Movers</h1>
         <div className='bg-cyan-500 rounded-lg'>
           <Link href={'tel:+919309147622'} target='_blank' className='flex gap-3 px-3 py-2 justify-center items-center'>
             <FaPhoneAlt className='text-amber-300' />

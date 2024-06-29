@@ -14,8 +14,8 @@ const fontSans = FontSans({
 })
 
 export const metadata: Metadata = {
-  title: "Chetanya International Packers and Movers",
-  description: "Chetanya Internation Packers and Movers is a company for all your packing and moving needs be it domestic, international, comercial or local",
+  title: "Chaitanya International Packers and Movers",
+  description: "Chaitanya Internation Packers and Movers is a company for all your packing and moving needs be it domestic, international, comercial or local",
 };
 
 export default function RootLayout({

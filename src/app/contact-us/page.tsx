@@ -16,9 +16,9 @@ function contactUs() {
         </div>
         <div className='flex gap-5 self-start'>
           <p>Email: </p>
-          <Link href='mailto:info@chetanyainternationalpackers.com'>
+          <Link href='mailto:info@chaitanyainternationalpackers.com'>
             <p>
-              info@chetanyainternationalpackers.com
+              info@chaitanyainternationalpackers.com
             </p>
           </Link>
         </div>

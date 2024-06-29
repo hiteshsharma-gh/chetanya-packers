@@ -24,9 +24,9 @@ function claims() {
         </div>
         <div className='flex gap-5 self-start'>
           <p>Email: </p>
-          <Link href='mailto:claims@chetanyainternationalpackers.com'>
+          <Link href='mailto:claims@chaitanyainternationalpackers.com'>
             <p>
-              claims@chetanyainternationalpackers.com
+              claims@chaitanyainternationalpackers.com
             </p>
           </Link>
         </div>
