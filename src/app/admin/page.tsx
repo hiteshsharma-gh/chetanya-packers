@@ -3,7 +3,6 @@ import { redirect } from 'next/navigation'
 
 async function admin() {
   const session = await getServerSession()
-  console.log(session)
 
   if (!session || !session.user) {
     return redirect('/api/auth/signin')

@@ -38,6 +38,7 @@ export function ContactUsForm() {
 
   async function onSubmit(values: z.infer<typeof formSchema>) {
     const response = await addCustomer(values.Name, values.Phone.toString())
+
     console.log(response)
   }
 

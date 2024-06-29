@@ -1,6 +1,7 @@
 'use server'
 
 import { PrismaClient } from "@prisma/client"
+import { revalidatePath } from "next/cache"
 
 const prisma = new PrismaClient()
 
@@ -32,6 +33,7 @@ export async function addCustomer(name: string, contact: string) {
       }
     })
 
+    revalidatePath('/admin/allcustomer')
     return { message: "customer added successfully" }
   } catch (error) {
     console.error(error)

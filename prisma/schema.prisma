@@ -15,17 +15,10 @@ model Customer {
 }
 
 model Order {
-  id        Int        @id @default(autoincrement())
-  number    String
-  locations Location[]
-}
-
-model Location {
-  id      Int      @id @default(autoincrement())
-  address String
-  time    DateTime @default(now())
-  Order   Order?   @relation(fields: [orderId], references: [id])
-  orderId Int?
+  id        Int      @id @default(autoincrement())
+  number    String   @unique
+  locations String
+  time      DateTime @default(now())
 }
 
 model Admin {
