@@ -4,7 +4,7 @@ import { ContactUsForm } from '@/components/ContactUsForm'
 import { redirect } from 'next/navigation';
 import React from 'react'
 
-const servicesArr = ['domestic', 'corporate', 'international', 'local', 'bulk', 'others']
+const servicesArr = ['domestic', 'corporate', 'international', 'local', 'bulk', 'cars']
 
 function services({ params }: { params: { serviceName: string } }) {
 

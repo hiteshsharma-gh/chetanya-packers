@@ -156,14 +156,14 @@ export function Section2() {
             </CardBody>
           </CardContainer>
         </Link>
-        <Link href='/services/others'>
+        <Link href='/services/cars'>
           <CardContainer className="inter-var w-96">
             <CardBody className="bg-gray-50 relative group/card border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
               <CardItem
                 translateZ="50"
                 className="text-2xl font-bold text-neutral-600"
               >
-                Others
+                Car Shipping
               </CardItem>
               <CardItem
                 as="p"

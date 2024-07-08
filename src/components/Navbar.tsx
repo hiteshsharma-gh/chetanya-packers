@@ -51,8 +51,8 @@ const components: { title: string; href: string; }[] = [
     href: "/services/bulk",
   },
   {
-    title: "Others",
-    href: "/services/others",
+    title: "Car Shipping",
+    href: "/services/cars",
   }
 ]
 
@@ -115,36 +115,13 @@ function Navbar() {
                       </DropdownMenuSubTrigger>
                       <DropdownMenuPortal>
                         <DropdownMenuSubContent>
-                          <Link href='/services/domestic'>
-                            <DropdownMenuItem>
-                              <span>Domestic Shifting</span>
-                            </DropdownMenuItem>
-                          </Link>
-                          <Link href='/services/corporate'>
-                            <DropdownMenuItem>
-                              <span>Corporate Shifting</span>
-                            </DropdownMenuItem>
-                          </Link>
-                          <Link href='/services/international'>
-                            <DropdownMenuItem>
-                              <span>International Shifting</span>
-                            </DropdownMenuItem>
-                          </Link>
-                          <Link href='/services/local'>
-                            <DropdownMenuItem>
-                              <span>Local Shifting</span>
-                            </DropdownMenuItem>
-                          </Link>
-                          <Link href='/services/bulk'>
-                            <DropdownMenuItem>
-                              <span>Bulk/Commercial Movement</span>
-                            </DropdownMenuItem>
-                          </Link>
-                          <Link href='/services/others'>
-                            <DropdownMenuItem>
-                              <span>Others</span>
-                            </DropdownMenuItem>
-                          </Link>
+                          {components.map((value, index) => (
+                            <Link key={index} href={value.href}>
+                              <DropdownMenuItem>
+                                <span>{value.title}</span>
+                              </DropdownMenuItem>
+                            </Link>
+                          ))}
                         </DropdownMenuSubContent>
                       </DropdownMenuPortal>
                     </DropdownMenuSub>
