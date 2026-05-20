@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "./ui/textarea"
-import { addCustomer } from "@/actions/customer"
+const contactEmail = "info@chaitanyainternationalpackers.com"
 
 const formSchema = z.object({
   Name: z.string().min(2, { message: "** Name must be at least 2 characters. **" }),
@@ -36,10 +36,17 @@ export function ContactUsForm() {
     },
   })
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
-    const response = await addCustomer(values.Name, values.Phone.toString())
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    const lines = [
+      `Name: ${values.Name}`,
+      `Phone: ${values.Phone}`,
+      values.Message ? `Message: ${values.Message}` : undefined,
+    ].filter(Boolean).join("\n")
 
-    console.log(response)
+    const subject = encodeURIComponent("Quote Request")
+    const body = encodeURIComponent(lines)
+    window.location.href = `mailto:${contactEmail}?subject=${subject}&body=${body}`
+    form.reset()
   }
 
   return (

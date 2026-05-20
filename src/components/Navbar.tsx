@@ -65,11 +65,6 @@ function Navbar() {
           Enquiry
         </Link>
         <span>|</span>
-        <Link href='/track' className='flex justify-center items-center gap-2'>
-          <IoLocationSharp className='text-cyan-500' />
-          Tracking
-        </Link>
-        <span>|</span>
         <Link href='/claims' className='flex justify-center items-center gap-2'>
           <FaBook className='text-cyan-500' />
           Claims
@@ -126,11 +121,6 @@ function Navbar() {
                       </DropdownMenuPortal>
                     </DropdownMenuSub>
                   </DropdownMenuGroup>
-                  <Link href='/track'>
-                    <DropdownMenuItem>
-                      <span>Track Order</span>
-                    </DropdownMenuItem>
-                  </Link>
                   <Link href='/locations'>
                     <DropdownMenuItem>
                       <span>Locations</span>
@@ -139,11 +129,6 @@ function Navbar() {
                   <Link href='/contact-us'>
                     <DropdownMenuItem>
                       <span>Contact Us</span>
-                    </DropdownMenuItem>
-                  </Link>
-                  <Link href='/admin'>
-                    <DropdownMenuItem>
-                      <span>Admin</span>
                     </DropdownMenuItem>
                   </Link>
                 </DropdownMenuGroup>
@@ -173,10 +158,8 @@ function Navbar() {
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-          <Link href='/track'>Track Order</Link>
           <Link href='/locations'>Locations</Link>
           <Link href='/contact-us'>Contact Us</Link>
-          <Link href='/admin'>Admin</Link>
         </div>
       </div>
     </nav >

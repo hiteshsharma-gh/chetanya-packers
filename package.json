@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "postinstall": "prisma generate",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -11,22 +10,17 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^3.6.0",
-    "@prisma/client": "5.16.1",
     "@radix-ui/react-dropdown-menu": "^2.1.1",
     "@radix-ui/react-label": "^2.1.0",
     "@radix-ui/react-menubar": "^1.1.1",
     "@radix-ui/react-navigation-menu": "^1.2.0",
     "@radix-ui/react-slot": "^1.1.0",
-    "@tanstack/react-table": "^8.17.3",
-    "axios": "^1.7.2",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.12",
     "lucide-react": "^0.396.0",
     "mini-svg-data-uri": "^1.4.4",
     "next": "14.2.4",
-    "next-auth": "^4.24.7",
-    "primereact": "^10.6.6",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.52.0",
@@ -43,7 +37,6 @@
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.4",
     "postcss": "^8.4.38",
-    "prisma": "^5.16.1",
     "tailwindcss": "^3.4.4",
     "typescript": "^5.5.2"
   }

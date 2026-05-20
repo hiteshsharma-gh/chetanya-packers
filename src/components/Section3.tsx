@@ -22,11 +22,6 @@ const testimonials = [
       "We deliver PAN India and international covering a vast area so that you don't have worry while moving.",
   },
   {
-    title:
-      "Tracking",
-    quote: "We provide online tracking of consignment so that you have an ease of mind.",
-  },
-  {
     title: "Security",
     quote: "We insure that your stuff gets deliverd as it is with our industry standard processes",
   },
